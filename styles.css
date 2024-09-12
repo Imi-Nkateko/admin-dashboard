@@ -1,1 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+    --main-bg-color: #38bdf8;
+    --font-link-color: #f8fafc;
+    --font-main-color: #09090b;
+    --font-small-color: #262626;
+    --box-shadow-color: #f59e0b;
+    --main-content-bg-color: #e2e8f0
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+svg {
+    fill: var(--font-link-color);
+}
+
+li > svg {
+    width: 20px;
+}
+
+ul {
+    margin-bottom: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 220px auto;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: var(--main-bg-color);
+    padding: 18px;
+    color: var(--font-link-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo > h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* main content */
+
+.search-input > svg {
+    fill: var(--font-small-color);
+    width: 35px;
+    padding-right: 10px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 150px auto;
+    background-color: var(--main-content-bg-color);
+}
+
+.menu-container {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-container > svg {
+    fill: var(--font-small-color);
+    width: 20px;
+}
+
+.nav-container {
+    background-color: var(--font-link-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+
+.search-input > input {
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main-content-bg-color);
+}
+
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.btn-container > button {
+    background-color: var(--main-bg-color);
+    width: 80px;
+    outline: none;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--font-link-color);
+    font-weight: 600;
+}

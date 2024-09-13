@@ -12,7 +12,7 @@ body {
     --main-bg-color: #38bdf8;
     --font-link-color: #f8fafc;
     --font-main-color: #09090b;
-    --font-small-color: #262626;
+    --font-small-color: #44403c;
     --box-shadow-color: #f59e0b;
     --main-content-bg-color: #e2e8f0
 }
@@ -130,4 +130,64 @@ nav {
     cursor: pointer;
     color: var(--font-link-color);
     font-weight: 600;
+}
+
+/* project content */
+
+.main-project-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.project-block {
+    border-radius: 5px;
+    border-left: var(--box-shadow-color) 5px solid;
+    background-color: var(--font-link-color);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2.4px 2.4px 3.2px;
+}
+
+.project-block > h1 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: var(--font-main-color);
+}
+
+.project-block > p {
+    color: var(--font-small-color);
+}
+
+.announcement-container {
+    margin-left: 10px;
+}
+
+.announcement-block {
+    border-radius: 5px;
+    background-color: var(--font-link-color);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2.4px 2.4px 3.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.announcement-block > h1{
+    font-size: 14px;
+    padding-bottom: 5px;
+padding-top: 5px;
+}
+
+.announcement-block > p {
+    font-size: 12px;
+    border-bottom: 1px solid var(--font-main-color);
+    padding: 5px;
 }
